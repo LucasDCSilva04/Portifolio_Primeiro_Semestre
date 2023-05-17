@@ -121,5 +121,5 @@ function deleteCredits(){
     setTimeout(() => goHome(),);
 }
 function goHome(){
-    window.location.href = "../02-Home/home.html";
+    window.location.href = "../01-Home/home.html";
 }
