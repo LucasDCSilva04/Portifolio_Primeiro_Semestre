@@ -18,29 +18,41 @@ function home(){
 
     <div class="scrollMe">
         <div class="scroll-snap-card">
+            
+            <div class="slide one container">
+                <div class="field">
+                    <div class="scroll"></div>
+                </div>
+            </div>
+
             <a href="../ProgramLanguage/programlanguage.html">
-                <div class="slide One">
+                <div class="slide two">
                     <p class="tip">Linguagem de Programação</p>
                 </div>
             </a>    
             <a href="../DataBase/databse.html">
-                <div class="slide Two">
+                <div class="slide three">
                     <p class="tip">Banco de Dados</p>
                 </div>
             </a>
             <a href="../Automation/automation.html">
-                <div class="slide Three">
+                <div class="slide four">
                     <p class="tip">Automação</p>
                 </div>
             </a>
             <a href="../DataScience/datascience.html">        
-                <div class="slide Four">
+                <div class="slide five">
                     <p class="tip">Ciência de Dados</p>
                 </div>
             </a>  
             <a href="../Network/network.html">
-                <div class="slide Five">
+                <div class="slide seven">
                     <p class="tip">Rede de Computadores</p>
+                </div>
+            </a>
+            <a href="../intro.html">
+                <div class="slide seven">
+                    <p class="tip">Ver introdução novamente</p>
                 </div>
             </a>
         </div>
