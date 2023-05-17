@@ -140,27 +140,27 @@ function deleteCredits(){
 
         <div class="scrollMe">
             <div class="scroll-snap-card">
-                <a href="../Automation/automation.html">
+                <a href="../ProgramLanguage/programlanguage.html">
                     <div class="slide One">
                         <p class="tip">Linguagem de Programação</p>
                     </div>
                 </a>    
-                <a href="">
+                <a href="../DataBase/databse.html">
                     <div class="slide Two">
                         <p class="tip">Banco de Dados</p>
                     </div>
                 </a>
-                <a href="">
+                <a href="../Automation/automation.html">
                     <div class="slide Three">
                         <p class="tip">Automação</p>
                     </div>
                 </a>
-                <a href="">        
+                <a href="../DataScience/datascience.html">        
                     <div class="slide Four">
                         <p class="tip">Ciência de Dados</p>
                     </div>
                 </a>  
-                <a href="">
+                <a href="../Network/network.html">
                     <div class="slide Five">
                         <p class="tip">Rede de Computadores</p>
                     </div>
