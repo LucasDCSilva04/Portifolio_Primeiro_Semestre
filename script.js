@@ -1,22 +1,43 @@
 //Start
+setTimeout(() => Lobby(), 1000);
 
-var btn = document.getElementById("btnAvaliar")
-btn.addEventListener("click",hideLobby)
+function Lobby(){
+    const div = document.createElement("div");
+    div.classList.add("lobby", "centralize")
+    
+    const label = document.createElement("div")
+    div.innerHTML = `<div class="lobbyClass">
+                        <p>Olá!</p>
+                        <button id="btnAvaliar">
+                            INICIAR
+                        </button>
+                     </div>`
 
+    document.body.appendChild(div);
+
+    var btn = document.querySelector("#btnAvaliar")
+    btn.addEventListener("click",fadeLobbyOut)
+
+    setTimeout(() => fadeLobbyIn(),);
+}
+//Show Lobby
+function fadeLobbyIn(){
+    document.querySelector(".lobbyClass")
+            .classList.toggle('fadeIn');
+}
 //Hide Lobby
 
-function hideLobby(){
-    document.querySelector("#lobbyId")
-            .classList.toggle('fade');
+function fadeLobbyOut(){
+    document.querySelector(".lobbyClass")
+            .classList.toggle('fadeOut');
 
-    setTimeout(() => showLoading(), 500);
+    setTimeout(() => showLoading(), 400);
 }
 
 //Show LoadScreen
 
 function showLoading(){
-    const btnAvaliar = document.getElementById("lobby")
-    btnAvaliar.remove();
+    document.querySelector(".lobby").remove();
 
     const div = document.createElement("div");
     div.classList.add("loading", "centralize")
@@ -38,27 +59,23 @@ function showLoading(){
     setTimeout(() => fadeLoadingOut(), 2000);
 }
 function fadeLoadingIn(){
-    document.querySelector("#loading")
+    document.querySelector(".loading")
             .classList.toggle('fadeIn');
 }
 
 function fadeLoadingOut(){
-    document.querySelector("#loading")
+    document.querySelector(".loading")
             .classList.toggle('fadeOut');
 
-    setTimeout(() => hideLoading(),500);
+    setTimeout(() => deleteLoading(),500);
 }
 
-function hideLoading(){
-    const loadings = document.getElementsByClassName("loading");
-    if(loadings.length){
-        loadings[0].remove();
-    }
-
+function deleteLoading(){
+    document.querySelector(".loading").remove();
     setTimeout(() => showWelcome(),300);
 }
 
-//Change Welcome
+//Welcome
 
 function showWelcome(){
     const div = document.createElement("div");
@@ -81,17 +98,14 @@ function fadeWelcomeOut(){
     document.querySelector(".welcome")
             .classList.toggle('fadeOut');
     
-    setTimeout(() => deleteWelcome(), 500);
-}
-
-function deleteWelcome(){
-    document.querySelector(".welcome").remove();
-    setTimeout(() => showCredits(),);
+    setTimeout(() => showCredits(),400);  
 }
 
 //My Credits
 
 function showCredits(){
+    document.querySelector(".welcome").remove();
+
     const div = document.createElement("div");
     div.classList.add("credits", "centralize")
     
