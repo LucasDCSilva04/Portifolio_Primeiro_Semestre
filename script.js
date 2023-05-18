@@ -15,10 +15,10 @@ function Lobby(){
 
     document.body.appendChild(div);
 
+    setTimeout(() => fadeLobbyIn(),300);
+
     var btn = document.querySelector("#btnAvaliar")
     btn.addEventListener("click",fadeLobbyOut)
-
-    setTimeout(() => fadeLobbyIn(),);
 }
 //Show Lobby
 function fadeLobbyIn(){
@@ -26,7 +26,6 @@ function fadeLobbyIn(){
             .classList.toggle('fadeIn');
 }
 //Hide Lobby
-
 function fadeLobbyOut(){
     document.querySelector(".lobbyClass")
             .classList.toggle('fadeOut');
@@ -66,18 +65,14 @@ function fadeLoadingIn(){
 function fadeLoadingOut(){
     document.querySelector(".loading")
             .classList.toggle('fadeOut');
-
-    setTimeout(() => deleteLoading(),500);
-}
-
-function deleteLoading(){
-    document.querySelector(".loading").remove();
-    setTimeout(() => showWelcome(),300);
+    setTimeout(() => showWelcome(),500);
 }
 
 //Welcome
 
 function showWelcome(){
+    document.querySelector(".loading").remove();
+
     const div = document.createElement("div");
     div.classList.add("welcome", "centralize")
     
@@ -127,13 +122,10 @@ function fadeCreditsOut(){
     document.querySelector(".credits")
             .classList.toggle('fadeOut');
     
-    setTimeout(() => deleteCredits(),300);
+    setTimeout(() => goHome(),350);
 }
 
-function deleteCredits(){
-    document.querySelector(".credits").remove();
-    setTimeout(() => goHome(),);
-}
 function goHome(){
+    document.querySelector(".credits").remove();
     window.location.href = "../01-Home/home.html";
 }
