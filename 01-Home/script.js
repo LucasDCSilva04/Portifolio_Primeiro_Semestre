@@ -1,5 +1,5 @@
 //Home Screen
-setTimeout(() => home(), 1000);
+setTimeout(() => home(),);
 
 function home(){
     const div = document.createElement("div");
@@ -19,32 +19,32 @@ function home(){
 
         <div class="choose">
             <div class="cards">
-                <a href="../ProgramLanguage/programlanguage.html">
-                    <div class="card card1">
+                <a class="go" onclick=hideAll()>
+                    <div class="card">
                         <p class="tip">Linguagem de Programação</p>
                         <p class="second-text">Java</p>
                     </div>
                 </a>
-                <a href="../DataBase/database.html">
-                    <div class="card card2">
+                <a class="go" onclick=hideAll()>
+                    <div class="card">
                         <p class="tip">Banco de Dados</p>
                         <p class="second-text">Postgree · DER · MER</p>
                     </div>
                 </a>
-                <a href="../Network/network.html">
-                    <div class="card card3">
+                <a class="go" onclick=hideAll()>
+                    <div class="card">
                         <p class="tip">Redes de Computadores</p>
                         <p class="second-text">IP · DNS · TCP</p>
                     </div>
                 </a>
-                <a href="../DataScience/datascience.html">
-                    <div class="card card4">
+                <a class="go" onclick=hideAll()>
+                    <div class="card">
                         <p class="tip">Ciência de Dados</p>
                         <p class="second-text">PYTHON</p>
                     </div>
                 </a>
-                <a href="../Automation/automation.html">
-                    <div class="card card5">
+                <a class="go" onclick=hideAll()>
+                    <div class="card">
                         <p class="tip">Automação Industrial</p>
                         <p class="second-text">C++ · Arduino · Eletrônica</p>
                     </div>
@@ -52,24 +52,57 @@ function home(){
             </div>
         </div>
         `
+    
     document.body.appendChild(div);
 
-    setTimeout(() => cardIn(), 2000);
+    setTimeout(() => homeFadeIn(),100);
+    setTimeout(() => cardIn(),100);
 }
 
 function homeFadeIn(){
-
-}
-
-function homeFadeOut(){
-
+    document.querySelector(".home").style.opacity=1;
 }
 
 function cardIn(){
-    for(i=1;i<6;i++){
-        document.getElementsByClassName('card'+i)[0].style.opacity = 0;
-    }
+    document.querySelector(".cards").style.opacity=1; 
 }
-function cardOut(){
 
+function homeFadeOut(){
+    document.querySelector(".home").style.opacity=0;
 }
+
+function cardOut(){
+    document.querySelector(".cards").style.opacity=0;
+}
+
+function hideAll(){
+    homeFadeOut();
+    cardOut();
+}
+
+function goLP(){
+    setTimeout(() => {
+        window.location.href = "../01-Home/home.html";
+    }, 400);   
+}
+
+function goBD(){
+    setTimeout(() => {
+        window.location.href = "../01-Home/home.html";
+    }, 400);}
+
+function goRedes(){
+    setTimeout(() => {
+        window.location.href = "../01-Home/home.html";
+    }, 400);}
+
+function goDataS(){
+    setTimeout(() => {
+        window.location.href = "../01-Home/home.html";
+    }, 400);
+}
+
+function goAuto(){
+    setTimeout(() => {
+        window.location.href = "../01-Home/home.html";
+    }, 400);}
