@@ -29,17 +29,19 @@ a{
     padding: 3rem;
     gap: 2rem;
 }
-        .title{
-            font-size: 3.5rem;
-            font-weight: bold;
-        }
-        .subTitle{
-            font-size: 1.5rem;
-            color: #0077ff;
-            font-weight: bold;
-        }
 
-.scrollMe{
+.title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.subTitle{
+    font-size: 1.5rem;
+    color: #0077ff;
+    font-weight: bold;
+}
+
+.chooseMe{
     display: flex;
     height: 100vh;
     width: 35vw;
@@ -48,14 +50,13 @@ a{
     text-align: center;
 }
 
-
 .cards {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .cards .card {
+}
+
+.cards .card {
     background-color: #0077ff;
     display: flex;
     align-items: center;
@@ -68,24 +69,24 @@ a{
     color: white;
     cursor: pointer;
     transition: .4s;
-  }
-  
-  .cards .card p.tip {
+}
+
+.cards .card p.tip {
     font-size: 1em;
     font-weight: 700;
     background-color: #00000000;
-  }
-  
-  .cards .card p.second-text {
+}
+
+.cards .card p.second-text {
     font-size: .7em;
     background-color: #00000000;
-  }
-  
-  .cards .card:hover {
+}
+
+.cards .card:hover {
     transform: scale(1.1, 1.1);
-  }
-  
-  .cards:hover .card:not(:hover) {
+}
+
+.cards:hover .card:not(:hover) {
     filter: blur(10px);
     transform: scale(0.9, 0.9);
-  }
+}
