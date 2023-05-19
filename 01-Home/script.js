@@ -27,12 +27,18 @@ function home(){
 
             <a href="../ProgramLanguage/programlanguage.html">
                 <div class="slide two">
-                    <p class="tip">Linguagem de Programação</p>
+                    <div class="card">
+                        <div class="card2">
+                        </div>
+                    </div>
                 </div>
             </a>    
             <a href="../DataBase/databse.html">
                 <div class="slide three">
-                    <p class="tip">Banco de Dados</p>
+                    <div class="card">
+                        <div class="card2">
+                        </div>
+                    </div>
                 </div>
             </a>
             <a href="../Automation/automation.html">
