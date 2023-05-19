@@ -17,72 +17,39 @@ function home(){
     </div>
 
     <div class="scrollMe">
-        <div class="scroll-snap-card">
-            
-            <div class="slide one container">
-                <div class="field">
-                    <div class="scroll"></div>
-                </div>
-            </div>
-
+        <div class="cards">
             <a href="../ProgramLanguage/programlanguage.html">
-                <div class="slide two">
-                    <div class="card">
-                        <div class="card2">
-                        </div>
-                    </div>
+                <div class="card">
+                    <p class="tip">Linguagem de Programação</p>
+                    <p class="second-text">Lorem Ipsum</p>
                 </div>
-            </a>    
-            <a href="../DataBase/databse.html">
-                <div class="slide three">
-                    <div class="card">
-                        <div class="card2">
-                        </div>
-                    </div>
+            </a>
+            <a href="../DataBase/database.html">
+                <div class="card">
+                    <p class="tip">Banco de Dados</p>
+                    <p class="second-text">Lorem Ipsum</p>
+                </div>
+            </a>
+            <a href="../Network/network.html">
+                <div class="card">
+                    <p class="tip">Redes de Computadores</p>
+                    <p class="second-text">Lorem Ipsum</p>
+                </div>
+            </a>
+            <a href="../DataScience/datascience.html">
+                <div class="card">
+                    <p class="tip">Ciência de Dados</p>
+                    <p class="second-text">Lorem Ipsum</p>
                 </div>
             </a>
             <a href="../Automation/automation.html">
-                <div class="slide four">
-                    <p class="tip">Automação</p>
-                </div>
-            </a>
-            <a href="../DataScience/datascience.html">        
-                <div class="slide five">
-                    <p class="tip">Ciência de Dados</p>
-                </div>
-            </a>  
-            <a href="../Network/network.html">
-                <div class="slide seven">
-                    <p class="tip">Rede de Computadores</p>
-                </div>
-            </a>
-            <a href="../intro.html">
-                <div class="slide seven">
-                    <p class="tip">Ver introdução novamente</p>
+                <div class="card">
+                    <p class="tip">Automação Industrial</p>
+                    <p class="second-text">Lorem Ipsum</p>
                 </div>
             </a>
         </div>
     </div>
     `
     document.body.appendChild(div);
-
-    setTimeout(() => fadeCreditsIn(),);
-    setTimeout(() => fadeCreditsOut(), 3000);
-    }
-
-    function fadeCreditsIn(){
-        document.querySelector(".credits")
-                .classList.toggle('fadeIn');
-    }
-
-    function fadeCreditsOut(){
-        document.querySelector(".credits")
-                .classList.toggle('fadeOut');
-        
-        setTimeout(() => deleteCredits(),300);
-    }
-
-    function deleteCredits(){
-        document.querySelector(".credits").remove();
-        setTimeout(() => home(),);
 }
