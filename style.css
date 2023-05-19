@@ -22,12 +22,6 @@
     font-size: 30px;
     transition: opacity .3s ease-in-out;
 }
-.lobbyClass.fadeIn{
-    opacity: 1;
-}
-.lobbyClass.fadeOut{
-    opacity: .0;
-}
 
         button {
             --color: #0077ff;
@@ -80,14 +74,6 @@
     opacity: 0;
     transition: opacity .3s ease-in-out;
 }
-.loading.fadeIn{
-    opacity: 1;
-}
-.loading.fadeOut{
-    opacity: 0;
-}
-
-    
         .spinner {
             width: 3rem;
             height: 3rem;
@@ -155,13 +141,6 @@
     transition: opacity .3s ease-in-out;
 }
 
-.welcome.fadeIn{
-    opacity: 1;
-}
-.welcome.fadeOut{
-    opacity: 0;
-}
-
 .credits{
     flex-direction: column;
     height: 100vh;
@@ -170,14 +149,6 @@
     font-size: 2rem;
     font-weight: bold;
     transition: opacity .3s ease-in-out;    
-}
-
-.credits.fadeIn{
-    opacity: 1;
-    }
-
-.credits.fadeOut{
-        opacity: 0;
 }
 
         .createBy{

@@ -22,14 +22,11 @@ function Lobby(){
 }
 //Show Lobby
 function fadeLobbyIn(){
-    document.querySelector(".lobbyClass")
-            .classList.toggle('fadeIn');
+    document.querySelector(".lobbyClass").style.opacity=1;
 }
 //Hide Lobby
 function fadeLobbyOut(){
-    document.querySelector(".lobbyClass")
-            .classList.toggle('fadeOut');
-
+    document.querySelector(".lobbyClass").style.opacity=0;
     setTimeout(() => showLoading(), 400);
 }
 
@@ -58,13 +55,11 @@ function showLoading(){
     setTimeout(() => fadeLoadingOut(), 2000);
 }
 function fadeLoadingIn(){
-    document.querySelector(".loading")
-            .classList.toggle('fadeIn');
+    document.querySelector(".loading").style.opacity=1;
 }
 
 function fadeLoadingOut(){
-    document.querySelector(".loading")
-            .classList.toggle('fadeOut');
+    document.querySelector(".loading").style.opacity=0;
     setTimeout(() => showWelcome(),500);
 }
 
@@ -85,13 +80,11 @@ function showWelcome(){
 }
 
 function fadeWelcomeIn(){
-    document.querySelector(".welcome")
-            .classList.toggle('fadeIn');
+    document.querySelector(".welcome").style.opacity=1;
 }
 
 function fadeWelcomeOut(){
-    document.querySelector(".welcome")
-            .classList.toggle('fadeOut');
+    document.querySelector(".welcome").style.opacity=0;
     
     setTimeout(() => showCredits(),400);  
 }
@@ -114,13 +107,11 @@ function showCredits(){
 }
 
 function fadeCreditsIn(){
-    document.querySelector(".credits")
-            .classList.toggle('fadeIn');
+    document.querySelector(".credits").style.opacity=1;
 }
 
 function fadeCreditsOut(){
-    document.querySelector(".credits")
-            .classList.toggle('fadeOut');
+    document.querySelector(".credits").style.opacity=0;
     
     setTimeout(() => goHome(),350);
 }
