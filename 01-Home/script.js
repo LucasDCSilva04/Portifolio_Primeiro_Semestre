@@ -1,5 +1,5 @@
 //Home Screen
-setTimeout(() => home(),);
+home()
 
 function home(){
     const div = document.createElement("div");
@@ -80,7 +80,7 @@ function cardIn(){
             document.querySelector(`#card${i}`).style.opacity=1;
             document.querySelector(`.move${i}`).style.transform="translateX(-100px)";
             incrementa();
-        }, 300);
+        }, 250);
     }
 
 function incrementa(){
