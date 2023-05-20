@@ -97,23 +97,23 @@ function hideAll(){
 
 function goLP(){
     setTimeout(() => {
-        window.location.href = "../01-Home/home.html";
+        window.location.href = "../ProgramLanguage/programlanguage.html";
     }, 600);   
 }
 
 function goBD(){
     setTimeout(() => {
-        window.location.href = "../01-Home/home.html";
+        window.location.href = "../DataBase/database.html";
     }, 600);}
 
 function goRedes(){
     setTimeout(() => {
-        window.location.href = "../01-Home/home.html";
+        window.location.href = "../Network/network.html";
     }, 600);}
 
 function goDataS(){
     setTimeout(() => {
-        window.location.href = "../01-Home/home.html";
+        window.location.href = "../DataScience/datascience.html";
     }, 600);
 }
 
