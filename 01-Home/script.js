@@ -19,7 +19,7 @@ function home(){
 
         <div class="choose">
             <div class="cards">
-                <a class="go" onclick=hideAll()>
+                <a class="go" onclick=goLP()>
                     <div class="move1">
                         <div class="card" id="card1">
                             <p class="tip">Linguagem de Programação</p>
@@ -27,7 +27,7 @@ function home(){
                         </div>
                     </div>    
                 </a>
-                <a class="go" onclick=hideAll()>
+                <a class="go" onclick=goBD()>
                     <div class="move2">
                         <div class="card" id="card2">
                             <p class="tip">Banco de Dados</p>
@@ -35,7 +35,7 @@ function home(){
                         </div>
                     </div>
                 </a>
-                <a class="go" onclick=hideAll()>
+                <a class="go" onclick=goRedes()>
                     <div class="move3">
                         <div class="card" id="card3">
                             <p class="tip">Redes de Computadores</p>
@@ -43,7 +43,7 @@ function home(){
                         </div>
                     </div>    
                 </a>
-                <a class="go" onclick=hideAll()>
+                <a class="go" onclick=goDataS()>
                     <div class="move4">
                         <div class="card" id="card4">
                             <p class="tip">Ciência de Dados</p>
@@ -51,7 +51,7 @@ function home(){
                         </div>
                     </div>
                 </a>
-                <a class="go" onclick=hideAll()>
+                <a class="go" onclick=goAuto()>
                     <div class="move5">
                         <div class="card" id="card5">
                             <p class="tip">Automação Industrial</p>
@@ -96,28 +96,33 @@ function hideAll(){
 }
 
 function goLP(){
+    hideAll();
     setTimeout(() => {
         window.location.href = "../ProgramLanguage/programlanguage.html";
     }, 600);   
 }
 
 function goBD(){
+    hideAll();
     setTimeout(() => {
         window.location.href = "../DataBase/database.html";
     }, 600);}
 
 function goRedes(){
+    hideAll();
     setTimeout(() => {
         window.location.href = "../Network/network.html";
     }, 600);}
 
 function goDataS(){
+    hideAll();
     setTimeout(() => {
         window.location.href = "../DataScience/datascience.html";
     }, 600);
 }
 
 function goAuto(){
+    hideAll();
     setTimeout(() => {
-        window.location.href = "../01-Home/home.html";
+        window.location.href = "../Automation/automation.html";
     }, 600);}
