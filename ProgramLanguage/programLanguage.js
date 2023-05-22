@@ -5,7 +5,7 @@ function createTitle(){
     divTitle.classList.add("title", "centralize")
     
     const label = document.createElement("div")
-    divTitle.innerHTML =`LINGUAGEM DE PROGRAMAÇÃO`;
+    divTitle.innerHTML =`Linguagem de Programação`;
 
     document.body.appendChild(divTitle);
 

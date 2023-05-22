@@ -5,7 +5,7 @@ function createTitle(){
     divTitle.classList.add("title", "centralize")
     
     const label = document.createElement("div")
-    divTitle.innerHTML =`BANCO DE DADOS`;
+    divTitle.innerHTML =`Banco de Dados`;
 
     document.body.appendChild(divTitle);
 
