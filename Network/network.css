@@ -7,6 +7,10 @@
     
 }
 
+body{
+    padding-bottom: 10%;
+}
+
 body::-webkit-scrollbar {
     width: 0.5vw;               /* width of the entire scrollbar */
 }
@@ -43,13 +47,15 @@ body::-webkit-scrollbar-thumb {
     transition: 0.5s ease-in-out;
 }
 
-.footer{
+.blur{
     display: flex;
     width: 100vw;
     height: 9vh;
-    align-items: center;
-    justify-content: end;
+    position: fixed;
+    bottom: 0;
+    filter: blur(25px);
 }
+
         button {
             opacity: 0;
             --color: #0077ff;

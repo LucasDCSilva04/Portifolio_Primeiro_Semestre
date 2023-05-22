@@ -68,7 +68,8 @@ function createButtom(){
     button.classList.add("footer")
     
     const label = document.createElement("div")
-    button.innerHTML = `<button id="btnHome">
+    button.innerHTML = `<div class="blur"></div>
+                        <button id="btnHome">
                             INÍCIO
                         </button>`
 
