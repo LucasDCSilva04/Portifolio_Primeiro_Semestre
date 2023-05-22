@@ -25,6 +25,7 @@ function Lobby(){
 
 //Hide Lobby
 function fadeLobbyOut(){
+    document.querySelector("html").style.cursor="none";
     document.querySelector(".lobbyClass").style.opacity=0;
     setTimeout(() => showLoading(), 400);
 }
