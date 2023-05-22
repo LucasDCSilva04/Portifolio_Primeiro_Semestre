@@ -59,6 +59,13 @@ function home(){
                         </div>
                     </div>
                 </a>
+                <a class="go" onclick=goIntro()>
+                    <div class="move6">
+                        <div class="card" id="card6">
+                            <p class="tip">Ver Introdução Novamente</p>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
         `
@@ -84,7 +91,7 @@ function cardIn(){
     }
 
 function incrementa(){
-    if(i<5)
+    if(i<6)
         i++;
 
     cardIn();
@@ -125,4 +132,10 @@ function goAuto(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Automation/automation.html";
+    }, 600);}
+
+function goIntro(){
+    hideAll();
+    setTimeout(() => {
+        window.location.href = "../Intro.html";
     }, 600);}
