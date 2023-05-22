@@ -15,15 +15,14 @@ function Lobby(){
 
     document.body.appendChild(div);
 
-    setTimeout(() => fadeLobbyIn(),300);
+    setTimeout(() => {
+        document.querySelector(".lobbyClass").style.opacity=1;
+    },300);
 
     var btn = document.querySelector("#btnAvaliar")
     btn.addEventListener("click",fadeLobbyOut)
 }
-//Show Lobby
-function fadeLobbyIn(){
-    document.querySelector(".lobbyClass").style.opacity=1;
-}
+
 //Hide Lobby
 function fadeLobbyOut(){
     document.querySelector(".lobbyClass").style.opacity=0;
@@ -51,22 +50,41 @@ function showLoading(){
                      </div>`
     document.body.appendChild(div);
 
-    setTimeout(() => fadeLoadingIn(),);
-    setTimeout(() => fadeLoadingOut(), 2000);
-}
-function fadeLoadingIn(){
-    document.querySelector(".loading").style.opacity=1;
+    setTimeout(() => {
+        document.querySelector(".loading").style.opacity=1;
+    },);
+    setTimeout(() => {
+        document.querySelector(".loading").style.opacity=0;
+        setTimeout(() => showAlert(),500);
+    }, 2000);
 }
 
-function fadeLoadingOut(){
-    document.querySelector(".loading").style.opacity=0;
-    setTimeout(() => showWelcome(),500);
+
+function showAlert(){
+    document.querySelector(".loading").remove();
+
+    const div = document.createElement("div");
+    div.classList.add("alert", "centralize")
+    
+    const label = document.createElement("div")
+    div.innerHTML = `<p class="caution">ATENÇÃO</p>
+                    <p>Esta apresentação irá para tela cheia automaticamente</p>`
+    document.body.appendChild(div);
+
+    setTimeout(() => {
+        document.querySelector(".alert").style.opacity=1;
+    },);
+    setTimeout(() => {
+        document.querySelector(".alert").style.opacity=0;
+        setTimeout(() => showWelcome(),2000);
+        fullScreen();
+    }, 2000);
 }
 
 //Welcome
 
 function showWelcome(){
-    document.querySelector(".loading").remove();
+    document.querySelector(".alert").remove();
 
     const div = document.createElement("div");
     div.classList.add("welcome", "centralize")
@@ -75,18 +93,13 @@ function showWelcome(){
     div.innerHTML = `<p>BEM-VINDO</p>`
     document.body.appendChild(div);
 
-    setTimeout(() => fadeWelcomeIn(),);
-    setTimeout(() => fadeWelcomeOut(), 2000);
-}
-
-function fadeWelcomeIn(){
-    document.querySelector(".welcome").style.opacity=1;
-}
-
-function fadeWelcomeOut(){
-    document.querySelector(".welcome").style.opacity=0;
-    
-    setTimeout(() => showCredits(),400);  
+    setTimeout(() => {
+        document.querySelector(".welcome").style.opacity=1;
+    },);
+    setTimeout(() => {
+        document.querySelector(".welcome").style.opacity=0;
+        setTimeout(() => showCredits(),400);  
+    }, 2000);
 }
 
 //My Credits
@@ -102,18 +115,13 @@ function showCredits(){
                      <p class="name">Lucas Dias Custodio da Silva</p>`
     document.body.appendChild(div);
 
-    setTimeout(() => fadeCreditsIn(),);
-    setTimeout(() => fadeCreditsOut(), 3000);
-}
-
-function fadeCreditsIn(){
-    document.querySelector(".credits").style.opacity=1;
-}
-
-function fadeCreditsOut(){
-    document.querySelector(".credits").style.opacity=0;
-    
-    setTimeout(() => goHome(),350);
+    setTimeout(() => {
+        document.querySelector(".credits").style.opacity=1;
+    },);
+    setTimeout(() => {
+        document.querySelector(".credits").style.opacity=0;
+        setTimeout(() => goHome(),350);
+    }, 3000);
 }
 
 function goHome(){

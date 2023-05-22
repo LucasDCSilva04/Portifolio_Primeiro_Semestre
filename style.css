@@ -132,6 +132,23 @@
             }
         }
 
+.alert{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    font-size: 1.5rem;
+    transition: opacity .3s ease-in-out;
+}
+
+.caution{
+    color: red;
+    font-weight: bold;
+    -webkit-text-stroke: 0.5px black;
+    font-size: 1rem;
+}
+
 .welcome {
     height: 100vh;
     width: 100vw;
