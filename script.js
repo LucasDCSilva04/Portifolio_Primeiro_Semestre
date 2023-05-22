@@ -27,12 +27,13 @@ function Lobby(){
 function fadeLobbyOut(){
     document.querySelector(".lobbyClass").style.opacity=0;
     setTimeout(() => showLoading(), 400);
-    document.querySelector(".lobby").remove();
 }
 
 //Show LoadScreen
 
 function showLoading(){
+    document.querySelector(".lobby").remove();
+
     const div = document.createElement("div");
     div.classList.add("loading", "centralize")
     
@@ -55,12 +56,13 @@ function showLoading(){
     setTimeout(() => {
         document.querySelector(".loading").style.opacity=0;
         setTimeout(() => showWelcome(),500);
-        document.querySelector(".loading").remove();
     }, 2000);
 }
 //Welcome
 
 function showWelcome(){
+    document.querySelector(".loading").remove();
+
     const div = document.createElement("div");
     div.classList.add("welcome", "centralize")
     
@@ -73,14 +75,15 @@ function showWelcome(){
     },);
     setTimeout(() => {
         document.querySelector(".welcome").style.opacity=0;
-        setTimeout(() => showCredits(),400);
-        document.querySelector(".welcome").remove();
+        setTimeout(() => showCredits(),400);  
     }, 2000);
 }
 
 //My Credits
 
 function showCredits(){
+    document.querySelector(".welcome").remove();
+
     const div = document.createElement("div");
     div.classList.add("credits", "centralize")
     
@@ -95,10 +98,10 @@ function showCredits(){
     setTimeout(() => {
         document.querySelector(".credits").style.opacity=0;
         setTimeout(() => goHome(),350);
-        document.querySelector(".credits").remove();
     }, 3000);
 }
 
 function goHome(){
+    document.querySelector(".credits").remove();
     window.location.href = "../01-Home/home.html";
 }
