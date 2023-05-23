@@ -4,9 +4,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #e8e8e8;
     overflow-x: hidden;
-    
 }
-
 body{
     padding-bottom: 10%;
 }
@@ -39,7 +37,7 @@ body::-webkit-scrollbar-thumb {
     transition: .5s ease-in-out;
 }
 
-.text{
+.content{
     opacity: 0;
     max-width: 100vw;
     padding: 5%;
@@ -55,19 +53,17 @@ body::-webkit-scrollbar-thumb {
     bottom: 0;
     filter: blur(25px);
 }
-
         button {
             opacity: 0;
             --color: #0077ff;
             font-family: inherit;
             display: inline-block;
-            right: 6%;
             width: 6em;
             height: 2.6em;
             line-height: 2.5em;
             overflow: hidden;
             font-size: 17px;
-            z-index: 1;
+            z-index: 999;
             color: var(--color);
             border: 2px solid var(--color);
             border-radius: 6px;
