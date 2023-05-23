@@ -47,7 +47,7 @@ function home(){
                     <div class="move4">
                         <div class="card" id="card4">
                             <p class="tip">Ciência de Dados</p>
-                            <p class="second-text">PYTHON</p>
+                            <p class="second-text">PYTHON · Matemática · Estatística Descritiva</p>
                         </div>
                     </div>
                 </a>
@@ -72,12 +72,10 @@ function home(){
     
     document.body.appendChild(div);
 
-    setTimeout(() => homeFadeIn(),100);
+    setTimeout(() => {
+        document.querySelector(".home").style.opacity=1;
+    },100);
     setTimeout(() => cardIn(),100);
-}
-
-function homeFadeIn(){
-    document.querySelector(".home").style.opacity=1;
 }
 
 var i = 1;
