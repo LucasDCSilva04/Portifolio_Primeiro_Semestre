@@ -24,6 +24,7 @@ body::-webkit-scrollbar-thumb {
 
 .centralize{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -35,6 +36,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 4em;
     font-weight: bolder;
     transition: .5s ease-in-out;
+}
+
+.subTitle{
+    font-size: 1.5rem;
 }
 
 .content{
@@ -97,3 +102,22 @@ body::-webkit-scrollbar-thumb {
             top: -30px;
             left: -30px;
         }
+
+.part2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+}
+
+img{
+    height: auto;
+    width: 20vw;
+    border-radius: 30px;
+}
+
+.text2{
+    height: auto;
+    width: 40vw;
+}

@@ -85,7 +85,7 @@ function cardIn(){
             document.querySelector(`#card${i}`).style.opacity=1;
             document.querySelector(`.move${i}`).style.transform="translateX(-100px)";
             incrementa();
-        }, 250);
+        }, 200);
     }
 
 function incrementa(){
@@ -104,36 +104,36 @@ function goLP(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../ProgramLanguage/programlanguage.html";
-    }, 600);   
+    }, 550);   
 }
 
 function goBD(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../DataBase/database.html";
-    }, 600);}
+    }, 550);}
 
 function goRedes(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Network/network.html";
-    }, 600);}
+    }, 550);}
 
 function goDataS(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../DataScience/datascience.html";
-    }, 600);
+    }, 550);
 }
 
 function goAuto(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Automation/automation.html";
-    }, 600);}
+    }, 550);}
 
 function goIntro(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Intro.html";
-    }, 600);}
+    }, 550);}

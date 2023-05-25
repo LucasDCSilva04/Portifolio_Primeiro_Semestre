@@ -1,5 +1,5 @@
 //Start
-setTimeout(() => Lobby(), 1000);
+setTimeout(() => Lobby(), 300);
 
 function Lobby(){
     const div = document.createElement("div");
@@ -27,7 +27,7 @@ function Lobby(){
 function fadeLobbyOut(){
     document.querySelector("html").style.cursor="none";
     document.querySelector(".lobbyClass").style.opacity=0;
-    setTimeout(() => showLoading(), 400);
+    setTimeout(() => showLoading(), 350);
 }
 
 //Show LoadScreen
@@ -56,8 +56,8 @@ function showLoading(){
     },);
     setTimeout(() => {
         document.querySelector(".loading").style.opacity=0;
-        setTimeout(() => showWelcome(),500);
-    }, 2000);
+        setTimeout(() => showWelcome(),300);
+    }, 900);
 }
 //Welcome
 
@@ -76,8 +76,8 @@ function showWelcome(){
     },);
     setTimeout(() => {
         document.querySelector(".welcome").style.opacity=0;
-        setTimeout(() => showCredits(),400);  
-    }, 2000);
+        setTimeout(() => showCredits(),350);  
+    }, 1500);
 }
 
 //My Credits
@@ -98,8 +98,8 @@ function showCredits(){
     },);
     setTimeout(() => {
         document.querySelector(".credits").style.opacity=0;
-        setTimeout(() => goHome(),350);
-    }, 3000);
+        setTimeout(() => goHome(),300);
+    }, 1500);
 }
 
 function goHome(){
