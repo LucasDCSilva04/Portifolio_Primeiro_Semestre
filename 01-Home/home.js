@@ -9,10 +9,10 @@ function home(){
     div.innerHTML =
         `
         <div class="home centralize">
-            <div class="title">
+            <div class="titleHome">
                 Avaliação do primeiro semestre de Análise e Desenvolvimento de Sistemas
             </div>
-            <div class="subTitle">
+            <div class="subTitleHome">
                 ESCOLHA A MATÉRIA
             </div>
         </div>

@@ -1,6 +1,7 @@
 :root{
     --colorBackgroud: #f1f1f1;
     --colorBlue: #0077ff;
+    cursor: default;
 }
 
 *{
@@ -8,15 +9,11 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--colorBackgroud);
-    overflow-x: hidden;
-    font-size: 1.1rem;
-}
-body{
-    padding-bottom: 10%;
 }
 
 body::-webkit-scrollbar {
     width: 0.5vw;
+    height: 0;
 }
 
 body::-webkit-scrollbar-track {

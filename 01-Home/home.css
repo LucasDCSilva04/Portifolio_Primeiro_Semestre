@@ -1,20 +1,3 @@
-:root{
-    --colorBackgroud: #f1f1f1;
-    --colorBlue: #0077ff;
-}
-
-*{
-    padding: 0;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--colorBackgroud);
-}
-.centralize{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 a{
     text-decoration: none;
 }
@@ -25,8 +8,6 @@ a{
     display: flex;
     flex-direction: row;
     gap: 5rem;
-    overflow: hidden;
-
 }
 
 .home{
@@ -40,12 +21,12 @@ a{
     cursor: default;
 }
 
-.title{
+.titleHome{
     font-size: 3em;
     font-weight: bold;
 }
 
-.subTitle{
+.subTitleHome{
     font-size: 1.5rem;
     color: var(--colorBlue);
     font-weight: bold;
