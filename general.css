@@ -56,9 +56,9 @@ body::-webkit-scrollbar-thumb {
 .blur{
     display: flex;
     width: 100vw;
-    height: 9vh;
+    height: 15vh;
     position: fixed;
-    bottom: 0;
+    bottom: -10vh;
     filter: blur(25px);
 }
         button {
@@ -111,12 +111,17 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: space-around;
     height: 80vh;
+    gap: 30px;
 }
 
-img{
+img, video{
     height: auto;
     width: 45vw;
-    border-radius: 30px;
+    border-radius: 10px;
+}
+
+video{
+    box-shadow: 0px 0px 20px 1px #000000;
 }
 
 .text{
