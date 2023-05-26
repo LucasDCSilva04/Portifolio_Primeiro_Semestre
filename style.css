@@ -1,8 +1,13 @@
+:root{
+    --colorBackgroud: #f1f1f1;
+    --colorBlue: #0077ff;
+}
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e8e8e8;
+    background-color: var(--colorBackgroud);
 }
 
 .centralize{
@@ -24,7 +29,6 @@
 }
 
         button {
-            --color: #0077ff;
             font-family: inherit;
             display: inline-block;
             width: 6em;
@@ -34,8 +38,8 @@
             margin: 20px;
             font-size: 17px;
             z-index: 1;
-            color: var(--color);
-            border: 2px solid var(--color);
+            color: var(--colorBlue);
+            border: 2px solid var(--colorBlue);
             border-radius: 6px;
             position: relative;
         }
@@ -43,7 +47,7 @@
         button::before {
             position: absolute;
             content: "";
-            background: var(--color);
+            background: var(--colorBlue);
             width: 150px;
             height: 200px;
             z-index: -1;
@@ -66,7 +70,7 @@
         }
 
 .loading{
-    background: #e8e8e8;
+    background: var(--colorBackgroud);
     z-index: 999;
     height: 100vh;
     width: 100vw;
@@ -131,23 +135,6 @@
             transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
             }
         }
-
-.alert{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    opacity: 0;
-    font-size: 1.5rem;
-    transition: opacity .3s ease-in-out;
-}
-
-.caution{
-    color: red;
-    font-weight: bold;
-    -webkit-text-stroke: 0.5px black;
-    font-size: 1rem;
-}
 
 .welcome {
     height: 100vh;

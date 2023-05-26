@@ -1,8 +1,13 @@
+:root{
+    --colorBackgroud: #f1f1f1;
+    --colorBlue: #0077ff;
+}
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #e8e8e8;
+    background-color: var(--colorBackgroud);
     overflow-x: hidden;
     font-size: 1.1rem;
 }
@@ -11,16 +16,16 @@ body{
 }
 
 body::-webkit-scrollbar {
-    width: 0.5vw;               /* width of the entire scrollbar */
+    width: 0.5vw;
 }
 
 body::-webkit-scrollbar-track {
-    background: #e8e8e8;        /* color of the tracking area */
+    background: var(--colorBackgroud);
 }
 
 body::-webkit-scrollbar-thumb {
-    background-color: #0077ff;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
+    background-color: #0077ff;
+    border-radius: 20px;
 }
 
 .centralize{
@@ -61,7 +66,6 @@ body::-webkit-scrollbar-thumb {
 }
         button {
             opacity: 0;
-            --color: #0077ff;
             font-family: inherit;
             display: inline-block;
             width: 6em;
@@ -70,8 +74,8 @@ body::-webkit-scrollbar-thumb {
             overflow: hidden;
             font-size: 17px;
             z-index: 999;
-            color: var(--color);
-            border: 2px solid var(--color);
+            color: var(--colorBlue);
+            border: 2px solid var(--colorBlue);
             border-radius: 6px;
             position: fixed;
             transition: opacity 0.5s ease-in-out;
@@ -82,7 +86,7 @@ body::-webkit-scrollbar-thumb {
         button::before {
             position: absolute;
             content: "";
-            background: var(--color);
+            background: var(--colorBlue);
             width: 150px;
             height: 200px;
             z-index: -1;
