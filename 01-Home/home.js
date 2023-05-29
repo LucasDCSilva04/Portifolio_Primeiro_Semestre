@@ -23,7 +23,7 @@ function home(){
                     <div class="move1">
                         <div class="card" id="card1">
                             <p class="tip">Linguagem de Programação</p>
-                            <p class="second-text">Java</p>
+                            <p class="second-text">Python · Java · C</p>
                         </div>
                     </div>    
                 </a>
@@ -31,7 +31,7 @@ function home(){
                     <div class="move2">
                         <div class="card" id="card2">
                             <p class="tip">Banco de Dados</p>
-                            <p class="second-text">Postgree · DER · MER</p>
+                            <p class="second-text">DER · MER</p>
                         </div>
                     </div>
                 </a>
@@ -47,7 +47,7 @@ function home(){
                     <div class="move4">
                         <div class="card" id="card4">
                             <p class="tip">Ciência de Dados</p>
-                            <p class="second-text">PYTHON · Matemática · Estatística Descritiva</p>
+                            <p class="second-text">Matemática · Estatística Descritiva</p>
                         </div>
                     </div>
                 </a>
@@ -55,7 +55,7 @@ function home(){
                     <div class="move5">
                         <div class="card" id="card5">
                             <p class="tip">Automação Industrial</p>
-                            <p class="second-text">C++ · Arduino · Eletrônica</p>
+                            <p class="second-text">\t Micro-Controlador · Eletrônica</p>
                         </div>
                     </div>
                 </a>
