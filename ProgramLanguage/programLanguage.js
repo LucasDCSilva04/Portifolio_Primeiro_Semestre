@@ -8,6 +8,8 @@ function showTitle(){
         setTimeout(() => {
         document.querySelector(".title").style.height="10vh";
         document.querySelector(".title").style.fontSize="2em";
+        document.querySelector("button").style.opacity=1;
+
             }, 1500);
         showContent();
     }, 300);

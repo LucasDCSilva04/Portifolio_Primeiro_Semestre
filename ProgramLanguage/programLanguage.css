@@ -1,0 +1,12 @@
+.gitBox{
+    height: 10vh;
+    width: 10vw;
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
