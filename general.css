@@ -1,5 +1,5 @@
 :root{
-    
+    --colorBackground: #f1f1f1;
     --colorBlue: #0077ff;
     cursor: default;
 }
@@ -8,7 +8,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--colorBackgroud);
+    background-color: var(--colorBackground);
 }
 
 body::-webkit-scrollbar {
@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--colorBackgroud);
+    background: var(--colorBackground);
 }
 
 body::-webkit-scrollbar-thumb {
@@ -46,11 +46,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     opacity: 0;
     max-width: 100vw;
-    padding: 5%;
-    padding-top: 0%;
     transition: 0.5s ease-in-out;
+    gap: 5px;
 }
 
 .blur{
@@ -107,15 +109,14 @@ body::-webkit-scrollbar-thumb {
 
 .part{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    height: 80vh;
-    gap: 30px;
+    max-height: 100vh;
+    min-height: 70vh;
 }
 
 img, video{
-    height: auto;
+    max-height: 80%;
     width: 45vw;
     border-radius: 10px;
 }
@@ -128,19 +129,21 @@ video{
     height: auto;
     width: 40vw;
 }
+
 .row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    gap: 2vw;
+    gap: 5%;
 }
+
 .column{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 5vh;
+    text-align: justify;
+    gap: 30px;
 }

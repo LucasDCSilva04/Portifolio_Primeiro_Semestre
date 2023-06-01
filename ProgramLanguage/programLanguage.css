@@ -1,12 +1,80 @@
+html{
+    overflow-x: hidden;
+}
+
 .gitBox{
     height: 10vh;
     width: 10vw;
     background-color: blue;
     border-radius: 5px;
     color: white;
-    text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.decorNone{
+    text-decoration: none;
+}
+
+.slider{
+    height: auto;
+    max-width: 60vw;
+    height: 60vh;
+    position: absolute;
+    transition: 0.5s;
+    transform: translate(100vw);
+}
+
+.projects{
+    gap: 35vh;
+}
+
+.s0{
+    transform: translate(0px);
+}
+
+.sliders{
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+.btnBack, .btnNext{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.btnBack{
+    left: 5%;
+    z-index: 999;
+    background-color: grey;
+    opacity: 0.2;
+}
+
+.btnNext{
+    right: 5%;
+    z-index: 999;
+    background-color: blue;
+}
+
+.btnNext:hover, .btnBack:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.seta{
+    margin: 0 auto;
+    margin-top: 20%;
+    color: white;
+    background-color: transparent;
+}
+
+.setaB{
+    transform: rotate(180deg);
+    margin-top: 25%;
 }
