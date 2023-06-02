@@ -3,15 +3,25 @@ html{
 }
 
 .gitBox{
-    height: 10vh;
-    width: 10vw;
-    background-color: blue;
+    height: 7vh;
+    width: 8vw;
     border-radius: 5px;
-    color: white;
+    font-size: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+   
+    background-color: transparent;
+    color: #0077ff;;
+    border: 2px solid #0077ff;;
+    transition: 0.1s;
+}
+
+.gitBox:hover{
+    border: 2px solid transparent;
+    background-color: #0077ff;;
+    color: white;
 }
 
 .decorNone{
@@ -47,6 +57,9 @@ html{
     position: absolute;
     color: white;
     transition: 0.4s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    padding: .5%;
 }
 
 .btnBack{
@@ -54,12 +67,14 @@ html{
     z-index: 999;
     background-color: grey;
     opacity: 0.2;
+    box-shadow: -1px 1px 3px black;
 }
 
 .btnNext{
     right: 5%;
     z-index: 999;
-    background-color: blue;
+    background-color: #0077ff;;
+    box-shadow: 1px 1px 3px black;
 }
 
 .btnNext:hover, .btnBack:hover{
@@ -68,13 +83,11 @@ html{
 }
 
 .seta{
-    margin: 0 auto;
-    margin-top: 20%;
     color: white;
     background-color: transparent;
 }
 
 .setaB{
-    transform: rotate(180deg);
-    margin-top: 25%;
+    margin-top: 10%;
+    transform: rotate(-180deg);
 }

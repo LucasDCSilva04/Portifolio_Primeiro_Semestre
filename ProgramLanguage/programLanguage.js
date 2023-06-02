@@ -7,7 +7,7 @@ function showTitle(){
 
         setTimeout(() => {
         document.querySelector(".title").style.height="10vh";
-        document.querySelector(".title").style.fontSize="2em";
+        document.querySelector(".title").style.fontSize="3rem";
         document.querySelector("button").style.opacity=1;
 
             }, 1500);
@@ -52,6 +52,14 @@ function back(){
         document.querySelector(`.s${j-1}`).style.transform="translateX(0vw)";
         j--;
         control();
+    }else if(j==0){
+        document.querySelector(`.s${j}`).style.transform="translateX(-2vw)"
+        setTimeout(() => {
+            document.querySelector(`.s${j}`).style.transform="translateX(3vw)"
+            setTimeout(() => {
+                document.querySelector(`.s${j}`).style.transform="translateX(0vw)"
+            }, 200);
+        }, 200);   
     }
 }
 
@@ -63,6 +71,14 @@ function next(){
         document.querySelector(`.s${j+1}`).style.transform="translateX(0vw)";
         j++;
         control();
+    }else if(j==9){
+        document.querySelector(`.s${j}`).style.transform="translateX(2vw)"
+        setTimeout(() => {
+            document.querySelector(`.s${j}`).style.transform="translateX(-3vw)"
+            setTimeout(() => {
+                document.querySelector(`.s${j}`).style.transform="translateX(0vw)"
+            }, 200);
+        }, 200);
     }
 }
 
@@ -72,7 +88,7 @@ function control(){
         document.querySelector(".btnBack").style.opacity=0.2;
     }
     if(j>0){
-        document.querySelector(".btnBack").style.backgroundColor = "blue";
+        document.querySelector(".btnBack").style.backgroundColor = "#0077ff";
         document.querySelector(".btnBack").style.opacity=1;
     }
     if(j==9){
@@ -80,7 +96,7 @@ function control(){
         document.querySelector(".btnNext").style.opacity=0.2;
     }
     if(j<9){
-        document.querySelector(".btnNext").style.backgroundColor = "blue";
+        document.querySelector(".btnNext").style.backgroundColor = "#0077ff";
         document.querySelector(".btnNext").style.opacity=1;
     }
 }
