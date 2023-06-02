@@ -117,7 +117,7 @@ body::-webkit-scrollbar-thumb {
     width: 80vw;
 }
 
-img, video{
+img,video{
     max-height: 50vh;
     width: auto;
     border-radius: 10px;
