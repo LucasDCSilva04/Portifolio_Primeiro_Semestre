@@ -41,7 +41,7 @@ html{
     gap: 35vh;
 }
 
-.s0{
+.s0, .c0{
     transform: translate(0px);
 }
 
@@ -50,7 +50,7 @@ html{
     max-width: 80vw;
 }
 
-.btnBack, .btnNext{
+.btnBack, .btnNext, .btnNext2, .btnBack2{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -62,7 +62,7 @@ html{
     padding: .5%;
 }
 
-.btnBack{
+.btnBack, .btnBack2{
     left: 5%;
     z-index: 999;
     background-color: grey;
@@ -70,14 +70,14 @@ html{
     box-shadow: -1px 1px 3px black;
 }
 
-.btnNext{
+.btnNext, .btnNext2{
     right: 5%;
     z-index: 999;
     background-color: #0077ff;;
     box-shadow: 1px 1px 3px black;
 }
 
-.btnNext:hover, .btnBack:hover{
+.btnNext:hover, .btnBack:hover, .btnBack2:hover, .btnNext2:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
