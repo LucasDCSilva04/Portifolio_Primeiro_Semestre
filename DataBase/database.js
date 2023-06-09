@@ -6,7 +6,7 @@ function showTitle(){
         document.querySelector(".title").style.opacity=1;
 
         setTimeout(() => {
-        document.querySelector(".title").style.height="20vh";
+        document.querySelector(".title").style.height="10vh";
         document.querySelector(".title").style.fontSize="2em";
             }, 1500);
         showContent();
