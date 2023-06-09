@@ -50,7 +50,7 @@
                 <b class="subTitle">Entidade Relacionamento</b>
                 <div class="row">
                         <div class="text">
-                            <p>&emsp; Este foi um dos primeiros assuntos para Banco de Dados, pois é muito importante planejar como que o sistema irá funcionar, e isso é o Modelo Entidade Relacionamento, para desenvolvê-lo, trabalhamos junto ao cliente, e através do que foi pedido, identificamos as entidades, se forte ou fraco e identificamos também o relacionamento entre elas. Tendo o Diagrama ER em mãos, facilita muito a vizualização do projeto, como na imagem ao lado.p>
+                            <p>&emsp; Este foi um dos primeiros assuntos para Banco de Dados, pois é muito importante planejar como que o sistema irá funcionar, e isso é o Modelo Entidade Relacionamento, para desenvolvê-lo, trabalhamos junto ao cliente, e através do que foi pedido, identificamos as entidades, se forte ou fraco e identificamos também o relacionamento entre elas. Tendo o Diagrama ER em mãos, facilita muito a vizualização do projeto, como na imagem ao lado.<p>
                         </div>
                         <div class="img2">
                             <img src="./media/imgs/MER.jpg" alt="">
@@ -68,7 +68,7 @@
                             <img src="./media/imgs/LOGICO.png" alt="">
                         </div>
                         <div class="text">
-                            <p>Aqui já começa a ficar mais complexo, pois é aqui que vamos organizar o funcionamento do banco de dados, ou seja, a partir daqui é importante entender como o Modelo Físico funciona. Nesta etapa é definido as Chaves Primárias, que devem ser únicas, também é definida as Chaves Secundárias, é identificada cada atributo das entidades, também, se for preciso, é criado novos atributos, é identificado as cardinalidades, 1 -> 1, 1 -> n, n -> n, etc, tudo por software que cria e organiza como a imagem ao lado. Sendo assim, passamos para a fase de melhoria, ou seja, se é possível otimizá-lo, ou se há algum erro!. Feito isso, podemos prosseguir.</p>
+                            <p>Aqui já começa a ficar mais complexo, pois é aqui que vamos organizar o funcionamento do banco de dados, ou seja, a partir daqui é importante entender como o Modelo Físico funciona. Nesta etapa é definido as Chaves Primárias, que devem ser únicas, também é definida as Chaves Secundárias, identificado cada atributo das entidades, também, se for preciso, é criado novos atributos, é também identificado as cardinalidades, 1 -> 1, 1 -> n, n -> n, etc, tudo por software que cria e organiza isso, como a imagem ao lado. Sendo assim, passamos para a fase de melhoria, ou seja, se é possível otimizá-lo, ou se há algum erro!. Feito isso, podemos prosseguir para o Modelo Físico.</p>
                         </div>
                 </div>
             </div>
@@ -79,10 +79,22 @@
                 <b class="subTitle">Modelo Físico</b>
                 <div class="row">
                         <div class="text">
-                            <p>lorem ipsum</p>
+                            <p>
+                                <b>SGBD:</b>Os SGBD'S são compostos por um servidor SQL, uma interface de desenvolvimento, ferramentas de linha de comando, entre outras facilidades. Neste caso utilizamos o PostgreSQL. Importante se atencar ao ACID (Atomicidade, Consistência, Isolamento e Durabilidade.)
+                                <br>
+                                <b>Comandos DDL</b>Um dos comandos principais estão aqui, onde 'Define' as entidades, ou seja, a criação de tabelas. Exemplos: Create Table, Alter Table, Drop Table.
+                                <br>
+                                <b>Comandos DML</b>Na 'Manipulação', como o nome diz, iremos 
+                                <br>
+                                <b>Comandos DQL</b>lorem.
+                                <br>
+                                <b>Comandos DTL</b>lorem.
+                                <br>
+                                <b>Comandos DCL</b>lorem.
+                        </p>
                         </div>
                         <div class="img2">
-                            <img src="./media/network.png" alt="">
+                            <img src="./media/imgs/POSTGREE.png" alt="">
                         </div>
                         
                 </div>
@@ -90,15 +102,64 @@
         </div>
 
         <div class="part">
-            <div class="column">
-                <b class="subTitle"> carrossel</b>
+            <div class="column projects">
+
+                <b class="subTitle">Veja com detalhes os meus projetos</b>
+
                 <div class="row">
-                        <div class="img2">
-                            <img src="./media/network.png" alt="">
+
+                    <a onclick=back()><div class="btnBack"><p class="setaB seta">➪</p></div></a>
+
+                    <div class="row sliders">
+                        <div class="column slider s0">
+                            <b>PortasLógicas.eletrônica</b>
+                            <p>&emsp; A seguir você irá ver uma Time Lapse que eu fiz, onde montei um circuito bem simples, porém mostra como funcionam as portas AND e OR, no Circuito Integrado.<br> O vídeo tem a intensão de mostrar que entendi como funciona, porém pode pular o vídeo para 2:00 minutos, porque mostra o funcionameto do circuito.</p>
                         </div>
-                        <div class="text">
-                            <p>carrossel</p>
+
+                        <div class="column slider s1">
+                            <video src="./media/Projects/TIME LAPSE 3 - 4X.mp4" controls muted></video>
                         </div>
+
+                        <div class="column slider s2">
+                            <b>LigaDesliga.arduino</b>
+                            <p>&emsp; O vídeo mostra algumas programações simples, como piscar led a cada segundo, depois, piscar enquanto o botão é pressionado, depois ligar e desligar a cada clique do botão. Vale lembrar que a última programação não está completa, pois quando o botão é pressionado, a programação roda muitas vezes, logo o led liga e desliga muito rápido, isso é um erro, mas se eu resolvesse no vídeo, ele iria ficar grande demais. Veja a seguir.</p>
+                        </div>
+
+                        <div class="column slider s3">
+                            <video src="./media/Projects/timelapse 2 - 4x.mp4" controls muted></video>
+                        </div>
+
+                        <div class="column slider s4">
+                            <b>MonitorSerial.arduino</b>
+                            <p>&emsp;O próximo projeto mostra os leds amarelo e vermelho sendo ligados a partir do monitor serial, esse projeto fiz fora de sala de aula, porém gostaria de colocar em foco aqui, pois entendendo como utilizar o Switch-Case desta maneira, fica fácil de implementar comandos por bluetooth no arduino. Confira.</p>
+                        </div>
+
+                        <div class="column slider s5">
+                            <video src="./media/Projects/Serial.mkv" controls muted></video>
+                        </div>
+
+                        <div class="column slider s6">
+                            <b>ProjetosGerais.arduino</b>
+                            <p>&emsp;Aqui nos projetos gerais, vou mostrar alguns dos meus projetos feitos no começo, quando estava conhecendo a linguagem C, logo, você irá perceber alguns códigos NADA otimizados, mas para os primeiros projetos está bom.<br>&emsp;Você irá encontra ligação de potenciômetro, sequência de ligação de leds, ponte H com relés e transistores, e um dos principais, a ligação do sensor Ultrassônico. Confira a seguir.</p>
+                        </div>
+
+                        <div class="column slider s7">
+                            <video src="./media/Projects/projectsGeneral.mkv" controls muted></video>
+                        </div>
+
+                        <div class="column slider s8">
+                            <b>BluetoothControl.arduino</b>
+                            <p>&emsp;Este é um dos projetos que fiz em 2022, ele é a continuação do projeto que liga as leds pelo monitor serial, mas a verdadeira intensão é acionar uma contatora pelo celular, afim de ligar um motor trifásico, infelizmente perdi este vídeo, mas tenho um muito legal também, que mostra o Arduino e a programação funcionando.
+                                <br>&emsp;Lembrando que o aplicativo foi desenvovido por mim e por meu colega de trabalho, Lucas Pires. Veja a seguir!.</p>
+                        </div>
+
+                        <div class="column slider s9">
+                            <video src="./media/Projects/bluetooth.mp4" controls muted></video>
+                        </div>
+                    </div>
+
+                    <a onclick=next()><div class="btnNext"><p class="seta setaN">➪</p></div></a>
+
                 </div>
             </div>
         </div>
@@ -118,34 +179,6 @@
             </div>
         </div>
 
-        <div class="part">
-            <div class="column">
-                <b class="subTitle">Elementos de uma Rede</b>
-                <div class="row">
-                        <div class="img2">
-                            <img src="./media/network.png" alt="">
-                        </div>
-                        <div class="text">
-                            <p>lorem ipsum</p>
-                        </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="part">
-            <div class="column">
-                <b class="subTitle">Elementos de uma Rede</b>
-                <div class="row">
-                        <div class="text">
-                            <p>lorem ipsum</p>
-                        </div>
-                        <div class="img2">
-                            <img src="./media/network.png" alt="">
-                        </div>
-                        
-                </div>
-            </div>
-        </div>
     </div><!-- default div for JS animation-->
 </body>
 <script src="./database.js"></script>
