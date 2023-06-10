@@ -22,8 +22,8 @@ function home(){
                 <a class="go" onclick=goLP()>
                     <div class="move1">
                         <div class="card" id="card1">
-                            <p class="tip">Linguagem de Programação</p>
-                            <p class="second-text">Python · Java · C</p>
+                            <p class="tip">Programação</p>
+                            <p class="second-text">Python · Java · C · JavaScript</p>
                         </div>
                     </div>    
                 </a>
@@ -31,7 +31,7 @@ function home(){
                     <div class="move2">
                         <div class="card" id="card2">
                             <p class="tip">Banco de Dados</p>
-                            <p class="second-text">DER · MER</p>
+                            <p class="second-text">DER · MER · SQL · DQL · DML</p>
                         </div>
                     </div>
                 </a>
@@ -39,7 +39,7 @@ function home(){
                     <div class="move3">
                         <div class="card" id="card3">
                             <p class="tip">Redes de Computadores</p>
-                            <p class="second-text">IP · DNS · TCP</p>
+                            <p class="second-text">IP · DNS · TCP · DHCP</p>
                         </div>
                     </div>    
                 </a>
