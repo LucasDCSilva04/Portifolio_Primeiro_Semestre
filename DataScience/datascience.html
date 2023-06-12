@@ -25,52 +25,209 @@
             </div>
         </div>
 
-        <br>
-
-        <b class="subTitle">JAVA</b>
         <div class="part">
-            <div class="img2">
-                <img src="./media/4799410.png" alt="">
-            </div>
-            <div class="text">
-                <p><b>Java:</b> É uma linguagem de programação orientada a objetos popular, usada principalmente para desenvolvimento de aplicativos corporativos, aplicativos Android e sistemas em larga escala. É conhecida por sua portabilidade e segurança.</p>
-                <p>Durante as quartas e quintas das semanas, foi disposto aulas de Java, um curso da Oracle, onde pude aprender a programar com essa linguagem. Como foi dito, além de trazer a tecnologia em cálculos dificeis, em Java pode-se fazer jogos, o que é muito legal. Durante as aulas, fizemos muitos projetos, como, um sistema de cadastro, e até  </p>
+            <div class="column">
+                <b class="subTitle">Arquitetura ANSI</b>
+                <div class="row">
+                        <div class="img2">
+                            <img src="./media/imgs/ANSI.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                <b>Nível Interno:</b> Também chamado de Físico, descreve a estrutura de armazenamento físico do banco de dados. Esse esquema utiliza um modelo de dado físico e descreve os detalhes completos do armazenamento de dados e caminhos de acesso ao banco de dados.
+                                <br>
+                                <b>Nível Externo:</b> Também chamado de Visão, abrange os esquemas externos ou visões de usuários. Cada esquema externo descreve a parte do banco de dados que um dado grupo de usuários tem interesse e oculta o restante do banco de dados desse grupo.
+                                <br>
+                                <b>Nível Conceitual:</b> Também chamado de Lógico, possui um esquema conceitual, que descreve a estrutura de todo o banco de dados para a comunidade de usuários. O esquema conceituai oculta os detalhes das estruturas de armazenamento físico e se concentra na descrição de entidades, tipos de dados, conexões, operações de usuários e restrições.
+                            </p>
+                        </div>
+                </div>
             </div>
         </div>
 
-        <br>
-        
-        <b class="subTitle">PYTHON</b>
         <div class="part">
-            <div class="text">
-                <p><b>Python:</b> É uma linguagem de programação de alto nível, fácil de aprender e com uma sintaxe legível. É usada em uma ampla gama de aplicações, desde desenvolvimento web e científico até automação de tarefas e inteligência artificial.</p>
-            </div>
-            <div class="img2">
-                <img src="./media/4799410.png" alt="">
+            <div class="column">
+                <b class="subTitle">Entidade Relacionamento</b>
+                <div class="row">
+                        <div class="text">
+                            <p>&emsp; Este foi um dos primeiros assuntos para Banco de Dados, pois é muito importante planejar como que o sistema irá funcionar, e isso é o Modelo Entidade Relacionamento, para desenvolvê-lo, trabalhamos junto ao cliente, e através do que foi pedido, identificamos as entidades, se forte ou fraco e identificamos também o relacionamento entre elas. Tendo o Diagrama ER em mãos, facilita muito a vizualização do projeto, como na imagem ao lado.<p>
+                        </div>
+                        <div class="img2">
+                            <img src="./media/imgs/MER.jpg" alt="">
+                        </div>
+                        
+                </div>
             </div>
         </div>
 
-        <br>
-        
-        <b class="subTitle">JavaScript</b>
         <div class="part">
-            <div class="img2">
-                <img src="./media/4799410.png" alt="">
-            </div>
-            <div class="text">
-                </p><b>JavaScript:</b> É uma linguagem de programação voltada para o desenvolvimento web. É amplamente utilizada para criar interações dinâmicas em sites e aplicativos web, além de ser usada também em servidores (Node.js) e em desenvolvimento de aplicativos móveis.</p>
+            <div class="column">
+                <b class="subTitle">Modelo Lógico</b>
+                <div class="row">
+                        <div class="img2">
+                            <img src="./media/imgs/LOGICO.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Aqui já começa a ficar mais complexo, pois é aqui que vamos organizar o funcionamento do banco de dados, ou seja, a partir daqui é importante entender como o Modelo Físico funciona. Nesta etapa é definido as Chaves Primárias, que devem ser únicas, também é definida as Chaves Secundárias, identificado cada atributo das entidades, também, se for preciso, é criado novos atributos e tabelas (normalização), é também identificado as cardinalidades, 1 -> 1, 1 -> n, n -> n, etc, com isso, é importante criar um esboço parecido com a imagem ao lado. Sendo assim, passamos para a fase de melhoria, ou seja, se é possível otimizá-lo, ou se há algum erro!. Feito isso, podemos prosseguir para o Modelo Físico.</p>
+                        </div>
+                </div>
             </div>
         </div>
 
-        <br>
-        
-        <b class="subTitle">C++</b>
         <div class="part">
-            <div class="text">
-                <p><b>C++:</b> É uma linguagem de programação de propósito geral e de alto desempenho. É amplamente utilizada no desenvolvimento de sistemas operacionais, jogos, software embarcado e aplicativos que exigem eficiência e controle de hardware.</p>
+            <div class="column">
+                <b class="subTitle">Modelo Físico</b>
+                <div class="row">
+                        <div class="text">
+                            <p>
+                                <b>SGBD:</b> Os SGBD'S são compostos por um servidor SQL, uma interface de desenvolvimento, ferramentas de linha de comando, entre outras facilidades. Neste caso utilizamos o PostgreSQL. Importante se atencar ao ACID (Atomicidade, Consistência, Isolamento e Durabilidade.)
+                                <br>
+                                <b>Comandos DDL:</b> Um dos comandos principais estão aqui, onde 'Define' as entidades, ou seja, a criação de tabelas. Exemplos: Create Table, Alter Table, Drop Table.
+                                <br>
+                                <b>Comandos DML:</b> Na 'Manipulação', como o nome diz, iremos modificar a tabela que criamos. Exemplo: Insert, Update, Delete. 
+                                <br>
+                                <b>Comandos DQL:</b> Na parte de 'Consulta', iremos vizualizar nossas tabelas de acordo com o que definimos, por exemplo, na ordem que queremos que apareça, ou somente algumas colunas especificas, etc. Exemplo: Select, Order By, Group By, Join, entre outros comandos.
+                        </p>
+                        </div>
+                        <div class="img2">
+                            <img src="./media/imgs/POSTGREE.png" alt="">
+                        </div>
+                        
+                </div>
             </div>
-            <div class="img2">
-                <img src="./media/4799410.png" alt="">
+        </div>
+
+        <div class="part">
+            <div class="column projects">
+
+                <b class="subTitle">Veja com detalhes os meus projetos</b>
+
+                <div class="row">
+
+                    <a onclick=back()><div class="btnBack"><p class="setaB seta">➪</p></div></a>
+
+                    <div class="row sliders">
+                        <div class="column slider s0">
+                            <b>1</b>
+                            <p>&emsp;2</p>
+                        </div>
+
+                        <div class="column slider s1">
+                            <video src="./media/projects/" controls muted></video>
+                        </div>
+
+                        <div class="column slider s2">
+                            <b>2</b>
+                            <p>&emsp; 2</p>
+                        </div>
+
+                        <div class="column slider s3">
+                            <video src="./media/projects/" controls muted></video>
+                        </div>
+
+                        <div class="column slider s4">
+                            <b>3</b>
+                            <p>&emsp;3</p>
+                        </div>
+
+                        <div class="column slider s5">
+                            <video src="./media/projects/" controls muted></video>
+                        </div>
+
+                        <div class="column slider s6">
+                            <b>4</b>
+                            <p>&emsp;4</p>
+                        </div>
+
+                        <div class="column slider s7">
+                            <video src="./media/projects/" controls muted></video>
+                        </div>
+
+                        <div class="column slider s8">
+                            <b>5</b>
+                            <p>&emsp;5</p>
+                        </div>
+
+                        <div class="column slider s9">
+                            <video src="./media/projects/" controls muted></video>
+                        </div>
+                    </div>
+
+                    <a onclick=next()><div class="btnNext"><p class="seta setaN">➪</p></div></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">Normalização</b>
+                <div class="row">
+                        <div class="text">
+                            <p>
+                                Normalização é o processo de organização de dados em um banco de dados. Isso inclui a criação de tabelas e o estabelecimento de relações entre essas tabelas de acordo com as regras projetadas para proteger os dados e tornar o banco de dados mais flexível, eliminando a redundância e a dependência inconsistente.<br>
+                                Tivemos uma atividade para aplicarmos isso, que será apresentado na conteúdo "Ciência de Dados", onde foi feito uma normalização de uma tabela gigante que contém informações dos tripulantes do navio Titanic.
+                            </p>
+                        </div>
+                        <div class="img2">
+                            <img src="./media/imgs/pc.png" alt="">
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">Primeira Forma Normal</b>
+                <div class="row">
+                        <div class="img2">
+                            <img src="./media/imgs/1FN.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Uma tabela esta na 1ª FN quando:<br>
+
+                                - Somente possui valores atômicos<br>
+                                - Não há grupos de atributos repetidos (há apenas um dado por coluna nas linhas)<br>
+                                - Existe uma chave primária<br>
+                                - Relação não possui atributos multivalorados ou relações aninhadas</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">Segunda Forma Normal</b>
+                <div class="row">
+                        <div class="text">
+                            <p>Uma relação esta na 2ª FN quando:<br>
+
+                                - Está na 1FN<br>
+                                - Não contém dependências parciais<p>
+                        </div>
+                        <div class="img2">
+                            <img src="./media/imgs/2FN.png" alt="">
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">Terceira Forma Normal</b>
+                <div class="row">
+                        <div class="img2">
+                            <img src="./media/imgs/3FN.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>Uma relação esta na 3ª FN quando:<br>
+
+                                - Está na 2FN<br>
+                                - Não contém dependências transitiva. A relação não deve ter um atributo não-chave funcionalmente determinado por um outro atributo não-chave</p>
+                        </div>
+                </div>
             </div>
         </div>
 
