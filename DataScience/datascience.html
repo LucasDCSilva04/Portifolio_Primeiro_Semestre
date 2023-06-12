@@ -36,7 +36,17 @@
                             <img src="./media/imgs/ANSI.png" alt="">
                         </div>
                         <div class="text">
-                            <p></p>
+                            <p>
+                                Em vez de coletar dados de todos os elementos de uma população, a amostragem seleciona apenas uma parte dos elementos para análise.<br>
+                                
+                                <b>Amostragem aleatória simples:</b> Todos os elementos da população têm a mesma chance de serem selecionados para a amostra.<br>
+                                
+                                <b>Amostragem estratificada:</b> A população é dividida em grupos com características semelhantes, e em seguida, uma amostra é selecionada aleatoriamente em cada grupo. Essa técnica é útil quando os grupos têm diferenças significativas entre si.<br>
+                                
+                                <b>Amostragem por conglomerados:</b> A população é dividida em grupos ou conglomerados, e alguns conglomerados são selecionados aleatoriamente para compor a amostra. Essa técnica é útil quando é difícil ou impraticável obter uma lista completa de todos os elementos da população.<br>
+                                
+                                <b>Amostragem sistemática:</b> Os elementos da população são selecionados de acordo com um padrão sistemático. Por exemplo, cada décima pessoa da população pode ser selecionada para a amostra.
+                            </p>
                         </div>
                 </div>
             </div>
@@ -47,7 +57,15 @@
                 <b class="subTitle">Escalas de Medição</b>
                 <div class="row">
                         <div class="text">
-                            <p></p>
+                            <p>
+                                <b>Nominal:</b> Ela é usada para categorizar ou nomear variáveis, sem impor uma ordem entre as categorias. Exemplos são: gênero, cor dos olhos ou estado civil.<br>
+
+                                <b>Ordinal:</b> Permite a ordenação ou classificação dos dados em categorias, além de fornecer informações sobre a diferença entre as categorias. Exemplo: satisfação (muito insatisfeito/insatisfeito/neutro/satisfeito/muito satisfeito).<br>
+                                
+                                <b>Intervalar:</b> Possui as características da escala ordinal, mas também permite medir a diferença entre os valores com base em uma unidade de medida constante. Exemplos são: recomendação não provável a muito provável (0 - ... - 10).<br>
+                                
+                                <b>Razão:</b> Possui todas as características da escala intervalar, mas também inclui um ponto zero absoluto, sem valor negativo. Além disso, a escala de razão permite fazer comparações proporcionais entre as medidas. Exemplos são: idade, altura, peso, etc.
+                            </p>
                         </div>
                         <div class="img2">
                             <img src="./media/imgs/MER.jpg" alt="">
@@ -65,7 +83,13 @@
                             <img src="./media/imgs/LOGICO.png" alt="">
                         </div>
                         <div class="text">
-                            <p></p>
+                            <p>
+                                <b>Média:</b> A média é a soma de todos os valores em um conjunto de dados dividida pelo número de valores. Ela é calculada adicionando todos os valores e dividindo pelo total de observações. A média é sensível a valores extremos e é mais apropriada quando os dados estão distribuídos de maneira aproximadamente simétrica.
+                                <br>
+                                <b>Mediana:</b> A mediana é o valor central em um conjunto de dados ordenados. Para encontrar a mediana, os dados são organizados em ordem crescente ou decrescente, e o valor do meio é selecionado. Se houver um número par de observações, a mediana é calculada como a média dos dois valores do meio. A mediana é menos sensível a valores extremos e é mais adequada para dados com distribuição assimétrica.
+                                <br>
+                                <b>Moda:</b> A moda é o valor que ocorre com maior frequência em um conjunto de dados. Pode haver uma moda (unimodal) ou mais de uma moda (bimodal, trimodal, etc.). A moda é útil para dados categóricos ou quando é importante identificar os valores mais frequentes.
+                            </p>
                         </div>
                 </div>
             </div>
@@ -76,7 +100,15 @@
                 <b class="subTitle">Medidas de Dispersão</b>
                 <div class="row">
                         <div class="text">
-                            <p></p>
+                            <p>
+                                <b>Amplitude:</b> A amplitude é a diferença entre o maior e o menor valor em um conjunto de dados. Ela fornece uma medida básica da extensão total dos dados, mas pode ser influenciada por valores extremos.<br>
+
+                                <b>Desvio Médio Absoluto:</b> O desvio médio absoluto (DMA) é a média das distâncias absolutas entre cada valor do conjunto de dados e a medida de tendência central (geralmente a média). Ele fornece uma medida da dispersão média dos dados, independentemente da direção.<br>
+                                
+                                <b>Variância:</b> A variância é uma medida de dispersão que mede a variabilidade dos dados em relação à média. Ela é calculada como a média dos quadrados das diferenças entre cada valor e a média. A variância é sensível a valores extremos, pois envolve o cálculo dos quadrados das diferenças.<br>
+                                
+                                <b>Desvio Padrão:</b> O desvio padrão é a raiz quadrada da variância e é uma das medidas de dispersão mais utilizadas. Ele fornece uma medida da dispersão típica dos dados em relação à média. O desvio padrão é amplamente utilizado devido à sua interpretação intuitiva e também é sensível a valores extremos.
+                            </p>
                         </div>
                         <div class="img2">
                             <img src="./media/imgs/POSTGREE.png" alt="">
@@ -88,10 +120,67 @@
 
         <div class="part">
             <div class="column">
+                <b class="subTitle">Teste de Hipóteses</b>
+                <div class="row">
+                        <div class="text">
+                            <p>
+                                O teste qui-quadrado é baseado no cálculo da estatística de qui-quadrado (χ²) e na comparação desse valor com um valor crítico da distribuição qui-quadrado para determinar se há diferenças significativas entre as frequências observadas e esperadas.
+                            </p>
+                        </div>
+                        <div class="img2">
+                            <img src="./media/imgs/pc.png" alt="">
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">O processo geral do teste qui-quadrado envolve as seguintes etapas</b>
+                <div class="row">
+                        <div class="img2">
+                            <img src="./media/imgs/1FN.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                <b>Formulação das hipóteses:</b>
+                                Hipótese nula (H0): Afirma que não há diferença entre as distribuições observadas e esperadas.
+                                Hipótese alternativa (H1): Afirma que há diferenças significativas entre as distribuições observadas e esperadas.<br>
+
+                                <b>Coleta de dados:</b>
+                                Os dados devem ser organizados em uma tabela de contingência, que mostra as frequências observadas em cada categoria para as variáveis em estudo.<br>
+                                
+                                <b>Cálculo da estatística de qui-quadrado (χ²):</b>
+                                Calcula-se a estatística de qui-quadrado utilizando a fórmula: χ² = Σ [(O - E)² / E], onde O representa as frequências observadas e E representa as frequências esperadas.<br>
+
+                                <b>Determinação dos graus de liberdade (df):</b>
+                                Os graus de liberdade são calculados com base no número de categorias e restrições do problema. Para uma tabela de contingência 2x2, os graus de liberdade são (número de linhas - 1) × (número de colunas - 1).<br>
+                                
+                                <b>Comparação com a distribuição qui-quadrado:</b>
+                                O valor da estatística de qui-quadrado é comparado com o valor crítico da distribuição qui-quadrado com os graus de liberdade correspondentes e um nível de significância definido. Se o valor da estatística de qui-quadrado for maior que o valor crítico, rejeita-se a hipótese nula e conclui-se que há diferenças significativas entre as distribuições. Caso contrário, não há evidência suficiente para rejeitar a hipótese nula.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
                 <b class="subTitle">Inferência</b>
                 <div class="row">
                         <div class="text">
-                            <p></p>
+                            <p>
+                                A distribuição probabilística binomial é utilizado para descrever experimentos binomiais, nos quais são realizadas uma sequência fixa de tentativas independentes, cada uma com apenas dois resultados possíveis: sucesso ou fracasso. Cada tentativa tem uma probabilidade constante de sucesso.<br>
+
+                                A distribuição binomial é caracterizada por dois parâmetros: o número de tentativas ou ensaios (n) e a probabilidade de sucesso em cada tentativa (p). Denotamos a distribuição binomial como B(n, p).<br>
+                                
+                                A função de massa de probabilidade da distribuição binomial pode ser calculada usando a fórmula:<br>
+
+                                <b>P(X = k) = (n para k) * p^k * q^(n-k)</b><br>
+
+                                Onde (n para k) representa o coeficiente binomial, que é o número de combinações de n objetos tomados k de cada vez.
+                            </p>
                         </div>
                         <div class="img2">
                             <img src="./media/imgs/pc.png" alt="">
@@ -109,7 +198,31 @@
                             <img src="./media/imgs/1FN.png" alt="">
                         </div>
                         <div class="text">
-                            <p></p>
+                            <p>
+                                <b>Tipos de funções</b><br> 
+                                bijetiva, injetiva não sobrejetiva, sobrejetiva não injetiva, não injetiva nem sobrejetiva<br>
+                                <br>
+                                <b>Função do 1° grau</b><br>
+                                equação da reta: <b>f(x) = ax + b</b><br>
+                                <br>
+                                <b>Função do 2° grau</b><br>
+                                função quadrática, parábola: <b>f(x) = ax² + bx + c</b><br>
+                                <br>
+                                <b>Função Exponencial</b><br>
+                                A variável deve estar no expoente, sendo assim: <b>f(x) = a^x</b><br>
+                                <br>
+                                <b>Função Logarítima</b><br>
+                                O domínio são números reais positivos, o contradomínio são números reais e a base deve ser positiva diferente de 1.<br>
+                                Se a > 1 = crescente, se 0 < a < 1 = decrescente.<br>
+                                <b>f(x) = LOG_a X</b><br>
+                                <br>
+                                <b>Juros</b><br>
+                                <b>M = C (1+i)^n</b><br>
+                                M = Montante, C = capital, i = Taxa de juros, n = Período
+                                
+                                
+                                
+                            </p>
                         </div>
                 </div>
             </div>
@@ -120,10 +233,20 @@
                 <b class="subTitle">Limites</b>
                 <div class="row">
                         <div class="text">
-                            <p><p>
+                            <p>
+                                A definição formal de limites envolve três elementos principais: a função, o ponto de aproximação e a noção de proximidade. Formalmente, podemos dizer que o limite de uma função f(x) quando x se aproxima de um valor c é dado por:<br>
+
+                                <b>lim x → c f(x) = L,</b><br>
+                                
+                                onde L é o limite da função f(x) quando x se aproxima de c.<br>
+                                
+                                A definição formal de limite estabelece que, para qualquer ε > 0, existe um δ > 0 tal que se 0 < |x - c| < δ, então |f(x) - L| < ε. Em outras palavras, para qualquer valor positivo ε suficientemente pequeno, podemos encontrar um valor δ correspondente que garanta que a função f(x) esteja a uma distância menor que ε do valor limite L, desde que x esteja suficientemente próximo de c, mas não igual a c.<br>
+
+                                Por exemplo: limite de x (tendendo) 2 em (2x - 3) = 2.2-3 = 4-3 = 1. Logo. Parece fácil, mas depende muito da formula que é aplicado, pois em alguns exercícios foi necessário o produto da soma pela diferença, o que é muito doido, mas o professor André foi desenvolvendo na lousa e fui levando, porém, parou de praticar, já era, é esquecido como fazer. 
+                            <p>
                         </div>
                         <div class="img2">
-                            <img src="./media/imgs/2FN.png" alt="">
+                            <img src="./media/img/tendencia.png" alt="">
                         </div>
                         
                 </div>
@@ -135,10 +258,16 @@
                 <b class="subTitle">Derivadas</b>
                 <div class="row">
                         <div class="img2">
-                            <img src="./media/imgs/3FN.png" alt="">
+                            <img src="./media/img/derivada.gif" alt="">
                         </div>
                         <div class="text">
-                            <p></p>
+                            <p>
+                                A derivada descreve a taxa de variação instantânea de uma função em relação à sua variável independente. A derivada de uma função é outra função que representa a taxa de variação da função original em cada ponto do seu domínio. A derivada de f(x) é dada por:<br>
+
+                                <b>f'(x) = lim (h → 0) [f(x + h) - f(x)] / h</b><br>
+
+                                <b>Tangente à curva:</b> A derivada também pode ser interpretada geometricamente como o coeficiente angular da reta tangente à curva da função em um ponto específico. A inclinação dessa reta tangente é igual ao valor da derivada nesse ponto.
+                            </p>
                         </div>
                 </div>
             </div>
@@ -149,7 +278,58 @@
                 <b class="subTitle">Integrais</b>
                 <div class="row">
                         <div class="text">
-                            <p><p>
+                            <p>
+                                A integral é um conceito fundamental do cálculo que envolve o cálculo da área sob uma curva ou a acumulação de uma quantidade ao longo de um intervalo. A integral também pode ser interpretada como uma operação inversa da derivada, permitindo encontrar uma função a partir de sua taxa de variação.<br>
+                                Para calcular integrais, existem várias técnicas e regras, como a regra da potência, regra da soma/diferença, regra da constante múltipla e regra da substituição. Essas regras facilitam o cálculo das integrais de funções mais complexas.
+                            <p>
+                        </div>
+                        <div class="img2">
+                            <img src="./media/imgs/2FN.png" alt="">
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">Tipos de Integrais</b>
+                <div class="row">
+                        <div class="img2">
+                            <img src="./media/imgs/3FN.png" alt="">
+                        </div>
+                        <div class="text">
+                            <p>
+                                A <b>integral definida</b> é usada para calcular a área exata sob uma curva em um intervalo específico representada por:<br>
+
+                                <b>∫[a, b] f(x) dx</b><br>
+
+                                O símbolo ∫ representa a integral e f(x) é a função a ser integrada. O intervalo [a, b] indica os limites de integração, ou seja, o intervalo em que a função está sendo integrada. O resultado da integral definida é um número real que representa a área sob a curva.<br>
+
+                                A <b>integral indefinida</b> é usada para encontrar uma função primitiva (ou antiderivada) de uma função dada representada por:<br>
+
+                                <b>∫ f(x) dx</b><br>
+
+                                Neste caso, não há limites de integração especificados. O resultado da integral indefinida é uma função mais geral, chamada de antiderivada da função original.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="part">
+            <div class="column">
+                <b class="subTitle">Raízes Racionais</b>
+                <div class="row">
+                        <div class="text">
+                            <p>
+                                As raízes racionais, também conhecidas como raízes inteiras, são os valores racionais (frações) que satisfazem uma equação polinomial. Mais especificamente, se uma equação polinomial tem coeficientes inteiros, então as raízes racionais são os valores racionais que podem ser soluções dessa equação.<br>
+                            
+                                Suponha que temos uma equação polinomial de grau n, com coeficientes inteiros:<br>
+                                
+                                aₙxⁿ + aₙ₋₁xⁿ⁻¹ + ... + a₁x + a₀ = 0<br>
+                                Para determinar as possíveis raízes racionais de uma equação polinomial, pode-se aplicar o Teorema dos Limites de Gauss ou usar o Método da Divisão Sintética. O Teorema dos Limites de Gauss estabelece que se uma equação polinomial tiver raízes racionais, então essas raízes serão da forma p/q, onde p é um divisor do termo independente (a₀) e q é um divisor do coeficiente líder (aₙ).
+                            <p>
                         </div>
                         <div class="img2">
                             <img src="./media/imgs/2FN.png" alt="">
@@ -167,7 +347,11 @@
                             <img src="./media/imgs/3FN.png" alt="">
                         </div>
                         <div class="text">
-                            <p></p>
+                            <p>
+                                Após encontrar uma possível raiz racional, pode-se usar o Método da Divisão Sintética para testar se essa raiz é de fato uma solução da equação. Se a divisão for exata, ou seja, o resto for igual a zero, então a raiz é confirmada.<br>
+
+                                É importante ressaltar que nem todas as equações polinomiais têm raízes racionais. Em alguns casos, as raízes podem ser números irracionais ou complexos. Portanto, é necessário utilizar técnicas adicionais, como o Teorema Fundamental da Álgebra ou métodos numéricos, para determinar todas as raízes de uma equação polinomial.
+                            </p>
                         </div>
                 </div>
             </div>
