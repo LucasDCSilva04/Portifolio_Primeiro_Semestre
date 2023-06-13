@@ -41,7 +41,7 @@ function createButton(){
 }
 
 var j=0;
-var max1=9;
+var max1=7;
 
 function back(){
     if(j>0){
