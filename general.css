@@ -143,6 +143,7 @@ video{
     align-items: center;
     text-align: center;
     gap: 10vw;
+    min-height: 60vh;
 }
 
 .column{
@@ -197,7 +198,7 @@ html{
 }
 
 .projects{
-    gap: 35vh;
+    
 }
 
 .s0, .c0{
@@ -205,7 +206,7 @@ html{
 }
 
 .sliders{
-    max-height: 80vh;
+    max-height: 40vh;
     max-width: 80vw;
 }
 
