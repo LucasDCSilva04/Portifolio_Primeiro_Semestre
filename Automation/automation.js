@@ -1,4 +1,4 @@
-showTitle();
+window.addEventListener("load",showTitle());
 
 function showTitle(){
     document.querySelector(".html").style.overflowY="hidden";

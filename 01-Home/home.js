@@ -1,5 +1,5 @@
 //Home Screen
-home()
+window.addEventListener("load",home());
 
 function home(){
     const div = document.createElement("div");
@@ -19,7 +19,7 @@ function home(){
 
         <div class="choose">
             <div class="cards">
-                <a class="go" onclick=goLP()>
+                <a class="go" onclick=goLP())>
                     <div class="move1">
                         <div class="card" id="card1">
                             <p class="tip">Programação</p>
