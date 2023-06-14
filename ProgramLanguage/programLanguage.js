@@ -41,7 +41,7 @@ function createButton(){
 
     document.querySelector("#btnHome").addEventListener("click", goHome);
 }
-
+/*
 var j=0;
 var max1=9;
 
@@ -161,6 +161,7 @@ function control2(){
         document.querySelector(".btnNext2").style.opacity=1;
     }
 }
+*/
 
 function goHome(){
     document.querySelector(".title").style.opacity=0;

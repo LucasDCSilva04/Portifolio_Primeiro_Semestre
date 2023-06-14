@@ -136,7 +136,7 @@ video{
     width: 40vw;
 }
 
-.row{
+.row, .rowBtn{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -144,6 +144,10 @@ video{
     text-align: center;
     gap: 10vw;
     min-height: 60vh;
+}
+
+.rowBtn{
+    min-height: 0vh;
 }
 
 .column{
@@ -162,27 +166,47 @@ html{
     margin-bottom: 5%;
 }
 
-.gitBox{
-    height: 7vh;
-    width: 8vw;
-    border-radius: 5px;
-    font-size: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-   
-    background-color: transparent;
-    color: #0077ff;;
-    border: 2px solid #0077ff;;
-    transition: 0.1s;
-}
+            .gitBox{
+                opacity: 1;
+                font-family: inherit;
+                display: inline-block;
+                min-width: 8vw;
+                padding: 0.3rem;
+                min-height: 7vh;
+                line-height: 2.5em;
+                overflow: hidden;
+                z-index: 999;
+                color: var(--colorBlue);
+                border: 0.1rem solid var(--colorBlue);
+                border-radius: 0.5em;
+                transition: opacity 0.5s ease-in-out;
+                position: relative;
+            }
 
-.gitBox:hover{
-    border: 2px solid transparent;
-    background-color: #0077ff;;
-    color: white;
-}
+            .gitBox::before {
+                position: absolute;
+                content: "";
+                background: var(--colorBlue);
+                width: 200%;
+                height: 200%;
+                z-index: -1;
+                border-radius: 40%;
+            }
+
+            .gitBox:hover {
+                color: white;
+            }
+
+            .gitBox:before {
+                top: 100%;
+                left: 100%;
+                transition: .3s all;
+            }
+
+            .gitBox:hover::before {
+                top: -30px;
+                left: -30px;
+            }
 
 .decorNone{
     text-decoration: none;

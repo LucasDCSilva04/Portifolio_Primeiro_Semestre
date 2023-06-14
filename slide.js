@@ -1,5 +1,5 @@
 var j=0;
-var max1=9;
+var max1=;
 
 function back(){
     if(j>0){
