@@ -72,19 +72,19 @@ body::-webkit-scrollbar-thumb {
             opacity: 0;
             font-family: inherit;
             display: inline-block;
-            width: 6em;
-            height: 2.6em;
+            min-width: 6em;
+            min-height: 2.6em;
             line-height: 2.5em;
             overflow: hidden;
-            font-size: 17px;
+            font-size: .65em;
             z-index: 999;
             color: var(--colorBlue);
-            border: 2px solid var(--colorBlue);
-            border-radius: 6px;
+            border: 0.1rem solid var(--colorBlue);
+            border-radius: 0.5em;
             position: fixed;
             transition: opacity 0.5s ease-in-out;
-            right: 5%;
-            bottom: 1%;
+            left: 90vw;
+            bottom: 2vh;
         }
 
         button::before {
@@ -122,8 +122,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 img,video{
-    max-height: 50vh;
-    width: auto;
+    max-height: 45vh;
+    max-width: 40vw;
     border-radius: 10px;
 }
 
@@ -189,16 +189,19 @@ html{
 }
 
 .slider{
+    opacity: 0;
     height: auto;
     max-width: 60vw;
     height: 60vh;
     position: absolute;
     transition: 0.5s;
-    transform: translate(100vw);
+    transform: translate(28vw);
 }
 
 .s0, .c0{
+    opacity: 1;
     transform: translate(0px);
+    z-index: 999;
 }
 
 .sliders{
@@ -207,8 +210,8 @@ html{
 }
 
 .btnBack, .btnNext, .btnNext2, .btnBack2{
-    width: 40px;
-    height: 40px;
+    width: 1.5em;
+    height: 1.5em;
     border-radius: 50%;
     position: absolute;
     color: white;
@@ -216,21 +219,19 @@ html{
     align-items: center;
     justify-content: center;
     padding: .5%;
+    box-shadow: -1px 1px 3px black;
+    z-index: 999;
 }
 
 .btnBack, .btnBack2{
     left: 5%;
-    z-index: 999;
     background-color: grey;
     opacity: 0.2;
-    box-shadow: -1px 1px 3px black;
 }
 
 .btnNext, .btnNext2{
     right: 5%;
-    z-index: 999;
-    background-color: #0077ff;;
-    box-shadow: 1px 1px 3px black;
+    background-color: #0077ff;
 }
 
 .btnNext:hover, .btnBack:hover, .btnBack2:hover, .btnNext2:hover{
