@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
     bottom: -10vh;
     filter: blur(25px);
 }
-        button {
+        button, .gitBox{
             opacity: 0;
             font-family: inherit;
             display: inline-block;
@@ -87,7 +87,7 @@ body::-webkit-scrollbar-thumb {
             bottom: 2vh;
         }
 
-        button::before {
+        button::before, .gitBox::before{
             position: absolute;
             content: "";
             background: var(--colorBlue);
@@ -97,20 +97,37 @@ body::-webkit-scrollbar-thumb {
             border-radius: 50%;
         }
 
-        button:hover {
+        button:hover, .gitBox:hover{
             color: white;
         }
 
-        button:before {
+        button:before, .gitBox:before{
             top: 100%;
             left: 100%;
             transition: .3s all;
         }
 
-        button:hover::before {
+        button:hover::before, .gitBox:hover::before{
             top: -30px;
             left: -30px;
         }
+
+            .gitBox{
+                opacity: 1;
+                min-width: 1em;
+                min-height: 1em;
+                padding: 0.3rem;
+                position: relative;
+                left: auto;
+                bottom: auto;
+                font-size: 1.4vw;
+            }
+            
+            .gitBox::before {
+                width: 200%;
+                height: 200%;
+                border-radius: 40%;
+            }
 
 .part{
     display: flex;
@@ -165,48 +182,6 @@ html{
     overflow-x: hidden;
     margin-bottom: 5%;
 }
-
-            .gitBox{
-                opacity: 1;
-                font-family: inherit;
-                display: inline-block;
-                min-width: 8vw;
-                padding: 0.3rem;
-                min-height: 7vh;
-                line-height: 2.5em;
-                overflow: hidden;
-                z-index: 999;
-                color: var(--colorBlue);
-                border: 0.1rem solid var(--colorBlue);
-                border-radius: 0.5em;
-                transition: opacity 0.5s ease-in-out;
-                position: relative;
-            }
-
-            .gitBox::before {
-                position: absolute;
-                content: "";
-                background: var(--colorBlue);
-                width: 200%;
-                height: 200%;
-                z-index: -1;
-                border-radius: 40%;
-            }
-
-            .gitBox:hover {
-                color: white;
-            }
-
-            .gitBox:before {
-                top: 100%;
-                left: 100%;
-                transition: .3s all;
-            }
-
-            .gitBox:hover::before {
-                top: -30px;
-                left: -30px;
-            }
 
 .decorNone{
     text-decoration: none;

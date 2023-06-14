@@ -23,6 +23,12 @@ function Lobby(){
     btn.addEventListener("click",fadeLobbyOut)
 }
 
+document.addEventListener('keypress', function(e){
+    if(e.which == 13){
+       fadeLobbyOut();
+    }
+ }, false);
+
 //Hide Lobby
 function fadeLobbyOut(){
     document.querySelector("html").style.cursor="none";
