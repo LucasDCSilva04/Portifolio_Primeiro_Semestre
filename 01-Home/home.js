@@ -8,6 +8,7 @@ function home(){
     const label = document.createElement("div")
     div.innerHTML =
         `
+        <video src="./Video/background.mp4" loop muted autoplay class"background"></video>
         <div class="home centralize">
             <div class="titleHome">
                 Avaliação do primeiro semestre de Análise e Desenvolvimento de Sistemas
@@ -74,6 +75,8 @@ function home(){
 
     setTimeout(() => {
         document.querySelector(".home").style.opacity=1;
+        document.querySelector("video").style.opacity=1;
+        document.querySelector("video").style.transform="translateX(0vw)";
     },100);
     setTimeout(() => cardIn(),100);
 }
@@ -98,42 +101,44 @@ function incrementa(){
 function hideAll(){
     document.querySelector(".cards").style.opacity=0;
     document.querySelector(".home").style.opacity=0;
+    document.querySelector("video").style.opacity=0;
+    document.querySelector("video").style.transform="translateX(-47vw)";
 }
 
 function goLP(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../ProgramLanguage/programlanguage.html";
-    }, 550);   
+    }, 900);   
 }
 
 function goBD(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../DataBase/database.html";
-    }, 550);}
+    }, 900);}
 
 function goRedes(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Network/network.html";
-    }, 550);}
+    }, 900);}
 
 function goDataS(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../DataScience/datascience.html";
-    }, 550);
+    }, 900);
 }
 
 function goAuto(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Automation/automation.html";
-    }, 550);}
+    }, 900);}
 
 function goIntro(){
     hideAll();
     setTimeout(() => {
         window.location.href = "../Intro.html";
-    }, 550);}
+    }, 900);}
