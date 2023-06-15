@@ -86,7 +86,7 @@ var i = 1;
 function cardIn(){
         setTimeout(function() {
             document.querySelector(`#card${i}`).style.opacity=1;
-            document.querySelector(`.move${i}`).style.transform="translateX(-100px)";
+            document.querySelector(`.move${i}`).style.transform="translateX(-5vw)";
             incrementa();
         }, 200);
     }
@@ -94,51 +94,56 @@ function cardIn(){
 function incrementa(){
     if(i<6)
         i++;
-
     cardIn();
 }
 
-function hideAll(){
-    document.querySelector(".cards").style.opacity=0;
-    document.querySelector(".home").style.opacity=0;
-    document.querySelector("video").style.opacity=0;
-    document.querySelector("video").style.transform="translateX(-47vw)";
+function hideAll(n){
+
+    document.querySelector(`#card${n}`).style.transform="translateX(-5vw)";
+    
+    setTimeout(() => {
+        document.querySelector(".cards").style.opacity=0;
+        document.querySelector(".home").style.opacity=0;
+        document.querySelector("video").style.opacity=0;
+        document.querySelector("video").style.transform="translateX(-47vw)";
+    }, 100);
+    
 }
 
 function goLP(){
-    hideAll();
+    hideAll(1);
     setTimeout(() => {
         window.location.href = "../ProgramLanguage/programlanguage.html";
-    }, 900);   
+    }, 1000);   
 }
 
 function goBD(){
-    hideAll();
+    hideAll(2);
     setTimeout(() => {
         window.location.href = "../DataBase/database.html";
     }, 900);}
 
 function goRedes(){
-    hideAll();
+    hideAll(3);
     setTimeout(() => {
         window.location.href = "../Network/network.html";
     }, 900);}
 
 function goDataS(){
-    hideAll();
+    hideAll(4);
     setTimeout(() => {
         window.location.href = "../DataScience/datascience.html";
     }, 900);
 }
 
 function goAuto(){
-    hideAll();
+    hideAll(5);
     setTimeout(() => {
         window.location.href = "../Automation/automation.html";
     }, 900);}
 
 function goIntro(){
-    hideAll();
+    hideAll(6);
     setTimeout(() => {
         window.location.href = "../Intro.html";
     }, 900);}

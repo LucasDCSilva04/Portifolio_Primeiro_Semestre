@@ -194,7 +194,7 @@ html{
     height: 60vh;
     position: absolute;
     transition: 0.5s;
-    transform: translate(28vw);
+    transform: translate(100vw);
 }
 
 .s0, .c0{
